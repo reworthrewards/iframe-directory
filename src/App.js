@@ -1,24 +1,24 @@
-import logo from './logo.svg';
-import './App.css';
+import { ReworthDirectory } from '@reworthrewards/reworth-directory';
+import {useLocation} from "react-router-dom";
 
 function App() {
+
+  const search = useLocation().search;
+  const accentColor = new URLSearchParams(search).get('accentColor');
+  const filters = new URLSearchParams(search).get('filters');
+  const arrayFilter = filters === null || filters === '' ? undefined : filters.split(',');
+  const lang = new URLSearchParams(search).get('lang');
+  const layout = new URLSearchParams(search).get('layout');
+  const showHeader = new URLSearchParams(search).get('showHeader');
+  const showHeaderBool = showHeader === null || showHeader === '' ? undefined : showHeader === 'true' ? true : showHeader === 'false' ? false : undefined;
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <ReworthDirectory
+      accentColor={accentColor === null || accentColor === '' ? undefined : `#${accentColor}`}
+      lang={lang === null || lang === '' ? undefined : lang === 'ES' ? lang : lang === 'EN' ? lang : undefined} 
+      filters={arrayFilter} 
+      showHeader={showHeaderBool} 
+      layout={layout === null || layout === '' ? undefined : layout} />
   );
 }
 
