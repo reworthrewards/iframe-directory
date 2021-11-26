@@ -14,8 +14,6 @@ function App() {
   const showHeader = new URLSearchParams(search).get('showHeader');
   const showHeaderBool = showHeader === null || showHeader === '' ? undefined : showHeader === 'true' ? true : showHeader === 'false' ? false : undefined;
 
-  console.log(hexRegex.test(accentColor));
-
   return (
     <ReworthDirectory
       accentColor={accentColorValid === true ? `#${accentColor}` : undefined}
