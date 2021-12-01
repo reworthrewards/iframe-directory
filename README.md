@@ -57,8 +57,10 @@ This implementation has been tested and proven to work on:
 - [x] website
 
 ## Security 
-This iframe uses some headers to ensure security aspects:
+This iframe runs behind the scenes some headers to ensure security aspects:
 
 X-XSS-Protection: helps us against OSX attacks
 Content-Security-Policy: specifies the origin of server and scripts. Helps against cross site scripting attack.
-Strict-Transport-Security:  it is used to never receive things from http and to make everything by https to avoid scripting attack,
+Strict-Transport-Security:  it is used to never receive things from http and to make everything by https to avoid scripting attack.
+
+We work actively too develop better and more secure products so expect updates!
