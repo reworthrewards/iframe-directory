@@ -1,70 +1,64 @@
-# Getting Started with Create React App
+![Logo - Reworth (2)](https://user-images.githubusercontent.com/46532943/144306909-c13a21ad-0e70-488d-9511-02c5aa1a102f.png)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# REWORTH'S directory iframe 
 
-## Available Scripts
+REWORTH's iframe-directory is a quick solution to integrate the rewards directory, you will be able to insert the iframe and have the directory up and running in no time without having to touch code.
 
-In the project directory, you can run:
+This iframe is a development hosted by Reworth that uses our [react directory component](https://github.com/reworthrewards/directory-react-component).
 
-### `yarn start`
+## How to use it?
+It can be embebed on a website or webView within a mobile application using the following tag:
+```
+example
+<iframe width="100%" height="100%" src="https://directory.reworth.app/?accentColor=4767D8&filters=category,popularity,rating,price&layout=card&lang=EN&showHeader=true" 
+frameBorder="0" />
+```
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+where the base url for src is:
+https://directory.reworth.app/
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+## Supported params
+You can customize certain aspects of the component via url as params.
+Here you can find a definition of each one of these params and their supported value and structure.
 
-### `yarn test`
+**accentColor**<br/>
+`src="https://directory.reworth.app/?accentColor=4767D8"` <br/>
+Description: Desired color for some UI elements <br/>
+Value: HEX color code
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `yarn build`
+**filters** <br/>
+`src="https://directory.reworth.app/?accentColor=4767D8&filters=category,popularity,rating,price"` <br/>
+Description: Filters available. This example contains all four supported filters. You can display a certain filter or all of them. <br/>
+Value: category, popularity, rating, price.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+**layout** <br/>
+`src="https://directory.reworth.app/?accentColor=4767D8&filters=category&layout=card"` <br/>
+Description: Layout distribution for rewards. This set the UI to show rewards as a single table or as responsive card distribution. <br/>
+Value: table, card
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `yarn eject`
+**lang** <br/>
+`src="https://directory.reworth.app/?accentColor=4767D8&filters=category&layout=card&lang=EN"` <br/>
+Description: Supported language.(English and Spanish) <br/>
+Value: EN,ES
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+**showHeader** <br/>
+`src="https://directory.reworth.app/?accentColor=4767D8&filters=category&layout=card&lang=EN&showHeader=true" ` <br/>
+Description: Default component header <br/>
+Value: true, false
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Will it work on my project?
+This implementation has been tested and proven to work on:
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+- [x]  React native
+- [x] Ionic
+- [x] website
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+## Security 
+This iframe uses some headers to ensure security aspects:
 
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+X-XSS-Protection: helps us against OSX attacks
+Content-Security-Policy: specifies the origin of server and scripts. Helps against cross site scripting attack.
+Strict-Transport-Security:  it is used to never receive things from http and to make everything by https to avoid scripting attack,
