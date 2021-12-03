@@ -14,7 +14,6 @@ example
 frameBorder="0" />
 ```
 
-
 ### You can generate your iframe with this [builder tool](https://reworthrewards.github.io/iframe-directory-builder/) :hammer_and_wrench:  <br/>
 
 ## Supported params
