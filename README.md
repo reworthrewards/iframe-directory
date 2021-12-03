@@ -14,8 +14,8 @@ example
 frameBorder="0" />
 ```
 
-where the base url for src is:
-https://directory.reworth.app/
+
+### You can generate your iframe with this [builder tool](https://reworthrewards.github.io/iframe-directory-builder/) :hammer_and_wrench:  <br/>
 
 ## Supported params
 You can customize certain aspects of the component via url as params.
@@ -41,7 +41,7 @@ Value: table, card
 
 **lang** <br/>
 `src="https://directory.reworth.app/?accentColor=4767D8&filters=category&layout=card&lang=EN"` <br/>
-Description: Supported language.(English and Spanish) <br/>
+Description: Supported language. (English and Spanish) <br/>
 Value: EN,ES
 
 **showHeader** <br/>
@@ -59,8 +59,8 @@ This implementation has been tested and proven to work on:
 ## Security 
 This iframe runs behind the scenes some headers to ensure security aspects:
 
-X-XSS-Protection: helps us against OSX attacks
-Content-Security-Policy: specifies the origin of server and scripts. Helps against cross site scripting attack.
-Strict-Transport-Security:  it is used to never receive things from http and to make everything by https to avoid scripting attack.
+X-XSS-Protection: helps us against OSX attacks <br/>
+Content-Security-Policy: specifies the origin of server and scripts. Helps against cross site scripting attack. <br/>
+Strict-Transport-Security:  it is used to never receive things from http and to make everything by https to avoid scripting attack.<br/>
 
-We work actively too develop better and more secure products so expect updates!
+We work actively to develop better and more secure products so expect updates!
