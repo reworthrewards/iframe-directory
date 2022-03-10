@@ -7,20 +7,15 @@ function App() {
   const hexRegex = /^[0-9A-F]{6}$/i;
   const accentColor = new URLSearchParams(search).get('accentColor');
   const accentColorValid = accentColor === null || accentColor === undefined ? undefined : hexRegex.test(accentColor);
-  const filters = new URLSearchParams(search).get('filters');
-  const arrayFilter = filters === null || filters === '' ? undefined : filters.split(',');
+  const fontFamily = new URLSearchParams(search).get('fontFamily');
   const lang = new URLSearchParams(search).get('lang');
-  const layout = new URLSearchParams(search).get('layout');
-  const showHeader = new URLSearchParams(search).get('showHeader');
-  const showHeaderBool = showHeader === null || showHeader === '' ? undefined : showHeader === 'true' ? true : showHeader === 'false' ? false : undefined;
 
   return (
     <ReworthDirectory
       accentColor={accentColorValid === true ? `#${accentColor}` : undefined}
+      fontFamily={fontFamily === null ? undefined : fontFamily}
       lang={lang === null || lang === '' ? undefined : lang === 'ES' ? lang : lang === 'EN' ? lang : undefined} 
-      filters={arrayFilter} 
-      showHeader={showHeaderBool} 
-      layout={layout === null || layout === '' ? undefined : layout} />
+    />
   );
 }
 
