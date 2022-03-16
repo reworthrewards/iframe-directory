@@ -10,8 +10,6 @@ function App() {
   const fontFamily = new URLSearchParams(search).get('fontFamily');
   const lang = new URLSearchParams(search).get('lang');
 
-  console.log(lang)
-
   return (
     <ReworthDirectory
       accentColor={accentColorValid === true ? `#${accentColor}` : undefined}
