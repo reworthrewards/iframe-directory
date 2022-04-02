@@ -1885,21 +1885,6 @@
     "minimatch" "^3.0.4"
     "strip-json-comments" "^3.1.1"
 
-"@fontsource/gothic-a1@^4.5.2":
-  "integrity" "sha512-JRioeRBwT2szsTI5xSJCqMzxlUF+GaYpoDTaYjnnLF49mwng6aYF87XtkNwnc6ApkBXOrr2TFeYHD+BdXR7IOA=="
-  "resolved" "https://registry.npmjs.org/@fontsource/gothic-a1/-/gothic-a1-4.5.2.tgz"
-  "version" "4.5.2"
-
-"@fontsource/montserrat@^4.5.5":
-  "integrity" "sha512-JEFI803levuRx3D0Lry4WoM/Azrc3xpHlogi2022Y8ykaAenXvrjMym2BVU1W5QsuRIL86vrSUaxchO7Vk4CIw=="
-  "resolved" "https://registry.npmjs.org/@fontsource/montserrat/-/montserrat-4.5.5.tgz"
-  "version" "4.5.5"
-
-"@fontsource/poppins@^4.5.2":
-  "integrity" "sha512-J0ri6LpKck+Bh7ltINNoI6ETvJbMM9vTWzFyVuAp67ybtGjVXPK3mPJFjJkDtmkE0FJ0nUupa5beO0+9tOXRTw=="
-  "resolved" "https://registry.npmjs.org/@fontsource/poppins/-/poppins-4.5.2.tgz"
-  "version" "4.5.2"
-
 "@hapi/address@2.x.x":
   "integrity" "sha512-QD1PhQk+s31P1ixsX0H0Suoupp3VMXzIVMSwobR3F3MSUO2YCV0B7xqLcUw/Bh8yuvd3LhpyqLQWTNcRmp6IdQ=="
   "resolved" "https://registry.npmjs.org/@hapi/address/-/address-2.1.4.tgz"
@@ -2203,17 +2188,14 @@
     "prop-types" "^15.7.2"
     "tslib" "^2.1.0"
 
-"@reworthrewards/reworth-directory@^1.1.5":
-  "integrity" "sha512-+Vq0L5yvUrddLmgvBWgFdRBYC4D6015iCGCPzremIHEbWRK27Hbcg5b8ckhhQj7u3NNzbA03kFrYk4+ID5eeaA=="
-  "resolved" "https://registry.npmjs.org/@reworthrewards/reworth-directory/-/reworth-directory-1.1.5.tgz"
-  "version" "1.1.5"
+"@reworthrewards/reworth-directory@^1.1.7":
+  "integrity" "sha512-8qLkvvp+2A9Gm+d5XNU8AUyscSQWNHZ5PbrcvQ2gQxLXjXhBovQ8GIj9xywn1a4FcfHhqD5HHUoGeTSEhRHjCA=="
+  "resolved" "https://registry.npmjs.org/@reworthrewards/reworth-directory/-/reworth-directory-1.1.7.tgz"
+  "version" "1.1.7"
   dependencies:
     "@chakra-ui/react" "^1.7.2"
     "@emotion/react" "^11.6.0"
     "@emotion/styled" "^11.6.0"
-    "@fontsource/gothic-a1" "^4.5.2"
-    "@fontsource/montserrat" "^4.5.5"
-    "@fontsource/poppins" "^4.5.2"
     "axios" "^0.24.0"
     "framer-motion" "^4.1.17"
     "prop-types" "^15.7.2"
