@@ -1182,6 +1182,13 @@
   "resolved" "https://registry.npmjs.org/@bcoe/v8-coverage/-/v8-coverage-0.2.3.tgz"
   "version" "0.2.3"
 
+"@capacitor/core@^3.5.0":
+  "integrity" "sha512-UTROxB7q/hZBnhDLcCN7mVsAX3SxXNMhVuPbtddsDOUCm4hExLXN62gPD7rjgmumhfHMjeXmkw/EfRzSjttL1g=="
+  "resolved" "https://registry.npmjs.org/@capacitor/core/-/core-3.5.1.tgz"
+  "version" "3.5.1"
+  dependencies:
+    "tslib" "^2.1.0"
+
 "@chakra-ui/accordion@1.4.8":
   "integrity" "sha512-NaaMhlndKcqaNUIGIfAaZzX8Dzwpts6cWcNx6F4YRixi2PdBGSV2+2038FYFeQpxRdt8MZ1fs4tjvnhLtzsJIQ=="
   "resolved" "https://registry.npmjs.org/@chakra-ui/accordion/-/accordion-1.4.8.tgz"
@@ -2188,11 +2195,12 @@
     "prop-types" "^15.7.2"
     "tslib" "^2.1.0"
 
-"@reworthrewards/reworth-directory@^1.1.8":
-  "integrity" "sha512-5ZMK/rIpfcGeMsTwd2pX06LNmcE9evZb1CN7g0MNnmlaIFPsE9o2O9KFYBPEn78F8vv6x622LSPvScvAMPs/uA=="
-  "resolved" "https://registry.npmjs.org/@reworthrewards/reworth-directory/-/reworth-directory-1.1.8.tgz"
-  "version" "1.1.8"
+"@reworthrewards/reworth-directory@^1.1.12":
+  "integrity" "sha512-r21ERsozDrRIkHLF6twHijjicUOzjn7anvC0HQE2MsiCc7V/TNJAalrqeFeA8V5eL7NiZ5jJ/ERvZZuv5/A8Yw=="
+  "resolved" "https://registry.npmjs.org/@reworthrewards/reworth-directory/-/reworth-directory-1.1.12.tgz"
+  "version" "1.1.12"
   dependencies:
+    "@capacitor/core" "^3.5.0"
     "@chakra-ui/react" "^1.7.2"
     "@emotion/react" "^11.6.0"
     "@emotion/styled" "^11.6.0"
