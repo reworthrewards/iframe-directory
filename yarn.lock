@@ -2195,10 +2195,17 @@
     "prop-types" "^15.7.2"
     "tslib" "^2.1.0"
 
+<<<<<<< HEAD
+"@reworthrewards/reworth-directory@^1.1.16":
+  "integrity" "sha512-rbrEczQjqE6VGnuTi36gPYRmozOnC1rqyJup58qkRIqTDu8kWrCBWW6r7HNu4h6r5cxf9wAuhrEAVgPW/2ElzQ=="
+  "resolved" "https://registry.npmjs.org/@reworthrewards/reworth-directory/-/reworth-directory-1.1.16.tgz"
+  "version" "1.1.16"
+=======
 "@reworthrewards/reworth-directory@^1.1.12":
   "integrity" "sha512-r21ERsozDrRIkHLF6twHijjicUOzjn7anvC0HQE2MsiCc7V/TNJAalrqeFeA8V5eL7NiZ5jJ/ERvZZuv5/A8Yw=="
   "resolved" "https://registry.npmjs.org/@reworthrewards/reworth-directory/-/reworth-directory-1.1.12.tgz"
   "version" "1.1.12"
+>>>>>>> main
   dependencies:
     "@capacitor/core" "^3.5.0"
     "@chakra-ui/react" "^1.7.2"
@@ -2207,6 +2214,7 @@
     "axios" "^0.24.0"
     "framer-motion" "^4.1.17"
     "prop-types" "^15.7.2"
+    "react-gtm-module" "^2.0.11"
     "react-icons" "^4.3.1"
     "react-infinite-scroll-component" "^6.1.0"
 
@@ -10160,6 +10168,11 @@
     "react-clientside-effect" "^1.2.5"
     "use-callback-ref" "^1.2.5"
     "use-sidecar" "^1.0.5"
+
+"react-gtm-module@^2.0.11":
+  "integrity" "sha512-8gyj4TTxeP7eEyc2QKawEuQoAZdjKvMY4pgWfycGmqGByhs17fR+zEBs0JUDq4US/l+vbTl+6zvUIx27iDo/Vw=="
+  "resolved" "https://registry.npmjs.org/react-gtm-module/-/react-gtm-module-2.0.11.tgz"
+  "version" "2.0.11"
 
 "react-icons@^4.3.1":
   "integrity" "sha512-cB10MXLTs3gVuXimblAdI71jrJx8njrJZmNMEMC+sQu5B/BIOmlsAjskdqpn81y8UBVEGuHODd7/ci5DvoSzTQ=="
