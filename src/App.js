@@ -9,6 +9,7 @@ function App() {
   const fontFamily = new URLSearchParams(search).get('fontFamily');
   const lang = new URLSearchParams(search).get('lang');
   const env = new URLSearchParams(search).get('env');
+  const geo = new URLSearchParams(search).get('geo');
   const gtm = new URLSearchParams(search).get('gtm');
 
   const availableEnvs = ['legacy', 'prod', 'dev', 'local'];
@@ -25,12 +26,15 @@ function App() {
     }
   }
 
+  console.log(geo)
+
   return (
     <ReworthDirectory
       accentColor={accentColorValid === true ? `#${accentColor}` : undefined}
       fontFamily={fontFamily === null || fontFamily === undefined || fontFamily === "undefined" ? undefined : fontFamily}
       lang={lang === null || lang === '' ? undefined : lang === 'ES' ? lang : lang === 'EN' ? lang : undefined} 
       env={handleEnv()}
+      geo={geo === null ? undefined : geo}
       gtm={gtm === 'true' ? true : false}
     />
   );
