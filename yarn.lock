@@ -2195,10 +2195,10 @@
     "prop-types" "^15.7.2"
     "tslib" "^2.1.0"
 
-"@reworthrewards/reworth-directory@^1.1.20":
-  "integrity" "sha512-mYeLQm+X+t9HUBo1DaUo+fQjem82b3+GisTIe/2enCTFrMSXmRK4zbLbFJRAaXfj1dNDXWt0C4nUlAKybNEq9g=="
-  "resolved" "https://registry.npmjs.org/@reworthrewards/reworth-directory/-/reworth-directory-1.1.20.tgz"
-  "version" "1.1.20"
+"@reworthrewards/reworth-directory@^1.1.21":
+  "integrity" "sha512-1MmbzP/ttcqib8oW8jNEnViBdNQoGwnNx+epv2idLGbsgH8JiBtZym/ArZwgCVVEVDzZGNidqCC9bzpwqZcNIg=="
+  "resolved" "https://registry.npmjs.org/@reworthrewards/reworth-directory/-/reworth-directory-1.1.21.tgz"
+  "version" "1.1.21"
   dependencies:
     "@capacitor/core" "^3.5.0"
     "@chakra-ui/react" "^1.7.2"
