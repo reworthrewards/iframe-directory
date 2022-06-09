@@ -28,12 +28,20 @@ function App() {
     }
   }
 
+  const handleDev = () => {
+    if(env === undefined && isDev === true) {
+      return 'dev'
+    } else {
+      return handleEnv()
+    }
+  }
+
   return (
     <ReworthDirectory
       accentColor={accentColorValid === true ? `#${accentColor}` : undefined}
       fontFamily={fontFamily === null || fontFamily === undefined || fontFamily === "undefined" ? undefined : fontFamily}
       lang={lang === null || lang === '' ? undefined : lang === 'ES' ? lang : lang === 'EN' ? lang : undefined} 
-      env={isDev === true ? 'dev' : handleEnv()}
+      env={handleDev()}
       geo={geo === null ? undefined : geo}
       gtm={gtm === 'true' ? true : false}
     />
