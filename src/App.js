@@ -12,7 +12,7 @@ function App() {
   const geo = new URLSearchParams(search).get('geo');
   const gtm = new URLSearchParams(search).get('gtm');
 
-  const isDev = window.location.origin === 'https://dev-directory.reworth.app' ? true : false;
+  const isDev = window.location.origin === 'https://dev-directory.reworth.app/' || window.location.origin === 'https://dev-directory.reworth.app' ? true : false;
 
   const availableEnvs = ['legacy', 'prod', 'dev', 'local'];
 
@@ -29,8 +29,10 @@ function App() {
   }
 
   const handleDev = () => {
-    if(env === undefined && isDev === true) {
-      return 'dev'
+    if(env === undefined) {
+      if(isDev === true) {
+        return 'dev'
+      }
     } else {
       return handleEnv()
     }
