@@ -12,6 +12,8 @@ function App() {
   const geo = new URLSearchParams(search).get('geo');
   const gtm = new URLSearchParams(search).get('gtm');
 
+  const isDev = window.location === 'https://dev-directory.reworth.app/' ? true : false;
+
   const availableEnvs = ['legacy', 'prod', 'dev', 'local'];
 
   const handleEnv = () => {
@@ -26,14 +28,12 @@ function App() {
     }
   }
 
-  console.log(geo)
-
   return (
     <ReworthDirectory
       accentColor={accentColorValid === true ? `#${accentColor}` : undefined}
       fontFamily={fontFamily === null || fontFamily === undefined || fontFamily === "undefined" ? undefined : fontFamily}
       lang={lang === null || lang === '' ? undefined : lang === 'ES' ? lang : lang === 'EN' ? lang : undefined} 
-      env={handleEnv()}
+      env={isDev === true ? 'dev' : handleEnv()}
       geo={geo === null ? undefined : geo}
       gtm={gtm === 'true' ? true : false}
     />
