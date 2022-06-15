@@ -14,7 +14,7 @@ function App() {
 
   const isDev = window.location.origin === 'https://dev-directory.reworth.app/' || window.location.origin === 'https://dev-directory.reworth.app' ? true : false;
 
-  const availableEnvs = ['legacy', 'prod', 'dev', 'local'];
+  const availableEnvs = ['legacy', 'prod', 'dev', 'local', 'latest'];
 
   const handleEnv = () => {
     let baseEnv = '';
