@@ -1,4 +1,4 @@
-import { ReworthDirectory } from '@reworthrewards/reworth-directory';
+import { ReworthDirectory } from '@reworthrewards/directory-react-component';
 import {useLocation} from "react-router-dom";
 
 function App() {
